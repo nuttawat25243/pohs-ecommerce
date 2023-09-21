@@ -1,0 +1,61 @@
+.trending {
+    padding: 5rem 0;
+}
+
+.trending h3 {
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    margin-bottom: 3rem;
+}
+
+.rowcontainer {
+    display: flex;
+        overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    position: relative;
+    padding: 1rem .6rem;
+    margin: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rowcontainer::-webkit-scrollbar {
+    display: none; 
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.titlebutton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    color: white;
+    background-color: #373737;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    height: 2rem;
+    width: 2em;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.btns {
+    display: flex;
+    gap: .4rem;
+}
+
+.btns button:hover {
+    background-color: black;
+}
+.container{
+    max-width: 768px;
+    margin: auto;
+}

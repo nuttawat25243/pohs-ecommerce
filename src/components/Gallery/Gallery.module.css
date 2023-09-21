@@ -1,0 +1,72 @@
+.trending {
+    padding: 5rem 0;
+}
+
+.trending h3 {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 1rem;
+}
+
+.trending h2 {
+
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 1;    
+    margin-bottom: 1rem;
+}
+
+.rowcontainer {
+    display: flex;
+        overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rowcontainer::-webkit-scrollbar {
+    display: none; 
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.titlebutton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    color: white;
+    position: absolute;
+    height: 50px;
+    opacity: 1;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    z-index: 99;
+    border-radius: 99px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+}
+
+.btns button:hover {
+    background-color: rgba(0, 0, 0,0.3 )
+}
+.rightbutton {
+    margin-left: 850px  !important ; 
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}

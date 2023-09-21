@@ -1,0 +1,22 @@
+.search-box {
+    display:flex;
+    width: 500px;
+    max-width: 500px;
+    height: 35px;
+    border: 1px solid #ced4da;
+    justify-content: space-between;
+    padding: 0 5px 0 0px ;
+   
+    font-size: 16 px;
+    color: #495057;
+  }
+  .search-box input{
+    width: 100%;
+    padding: 0 5px;
+    margin-right: 10px;
+    
+  }
+  .text-home {
+    font-size:20vw;
+  } 
+

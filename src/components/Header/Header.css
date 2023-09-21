@@ -1,0 +1,55 @@
+.overlay {
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+    position: absolute;
+    top:0;  
+    left: 0;
+    bottom: 0;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+.overlay:hover{
+    background-color: rgba(0,0,0,0.5);
+  
+}
+.container {
+margin: auto;
+align-items: center;
+
+}
+
+.grid-container {
+  display: grid;
+    height: 40rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'one two''one three';
+    gap: 1.3rem;
+    margin-top: 1.3rem;
+   
+    
+
+}
+.feature {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.feature img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.grid-one {
+  grid-area: one;
+}
+
+.grid-two {
+  grid-area: two;
+}
+
+.grid-three {
+  grid-area: three;
+}
