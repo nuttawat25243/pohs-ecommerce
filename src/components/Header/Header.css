@@ -25,11 +25,10 @@ align-items: center;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'one two''one three';
     gap: 1.3rem;
-    margin-top: 1.3rem;
-   
+    margin: 1rem;
     
-
 }
+
 .feature {
   overflow: hidden;
   position: relative;

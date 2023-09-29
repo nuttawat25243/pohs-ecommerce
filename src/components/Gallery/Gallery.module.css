@@ -19,7 +19,7 @@
 
 .rowcontainer {
     display: flex;
-        overflow-x: scroll;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
@@ -30,8 +30,6 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 .rowcontainer::-webkit-scrollbar {
     display: none; 
-
-    /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -64,9 +62,29 @@
     background-color: rgba(0, 0, 0,0.3 )
 }
 .rightbutton {
-    margin-left: 850px  !important ; 
+    margin-left: 250px  !important ; 
 }
+
 .container{
-    max-width: 900px;
+    max-width: 300px;
     margin: auto;
 }
+
+ @media screen and (min-width: 640px) { 
+    .container{
+        max-width: 600px;
+        margin: auto;
+    }
+    .rightbutton {
+        margin-left: 552px  !important ; 
+    }
+ }
+ @media screen and (min-width: 1024px) { 
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .rightbutton {
+        margin-left: 850px  !important ; 
+    }
+ }

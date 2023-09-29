@@ -8,12 +8,12 @@ import { BsChevronLeft,BsChevronRight } from "react-icons/bs";
 function Review() {
   const slideLeft = () => {
     let slider = document.getElementById("review-slider");
-    slider.scrollLeft = slider.scrollLeft - 235;
+    slider.scrollLeft = slider.scrollLeft - 416;
   };
 
   const slideRight = () => {
     let slider = document.getElementById("review-slider");
-    slider.scrollLeft = slider.scrollLeft + 235;
+    slider.scrollLeft = slider.scrollLeft + 416;
   };
   return (
     <div className={style.trending}>

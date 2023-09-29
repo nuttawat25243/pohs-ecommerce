@@ -1,0 +1,38 @@
+.search-item  {
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  margin-top: 1px;
+   max-width: 480px;
+ } 
+ .search-item  li{
+   border-bottom: 0.5px solid snow;
+   padding: 3px;
+   cursor: pointer;
+ } 
+
+ .search-item  li:hover  {
+  background-color: gainsboro;
+  
+ } 
+ .search-box {
+  display:flex;
+  width: 100%;
+  height: 35px;
+  border:1.5px solid gray;
+  border-radius: 3px;
+  justify-content: center;
+  font-size: 16 px;
+  color: #495057;
+
+}
+@media (max-width: 640px) {  
+.search-box {
+}
+}
+.search-box input{
+  width: 100%;
+  padding: 6px 5px;
+  font-size: 1rem;
+}
+

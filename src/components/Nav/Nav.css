@@ -1,22 +1,10 @@
-.search-box {
-    display:flex;
-    width: 500px;
-    max-width: 500px;
-    height: 35px;
-    border: 1px solid #ced4da;
-    justify-content: space-between;
-    padding: 0 5px 0 0px ;
-   
-    font-size: 16 px;
-    color: #495057;
+.slide-in {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
   }
-  .search-box input{
-    width: 100%;
-    padding: 0 5px;
-    margin-right: 10px;
-    
+  
+  /* Define the visible position of the menu */
+  .slide-out {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
   }
-  .text-home {
-    font-size:20vw;
-  } 
-

@@ -13,7 +13,7 @@ export const Reviews = [
     date: "09/09/23",
     stars: 4.5,
     review: " Good Fabric.  ",
-    product : "Black Sweater",
+    product : "Green Sweater",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const Reviews = [
     date: "09/10/23",
     stars: 5,
     review: " Ten out of 10.",
-    product : "Black Sweater",
+    product : "Green Jacket ",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ export const Reviews = [
     date: "09/11/23",
     stars: 5,
     review: "Perfect!!",
-    product : "Black Sweater",
+    product : "Pattern Coat",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const Reviews = [
     date: "09/11/23",
     stars: 4.5,
     review: "Very Fast Shipping. ",
-    product : "Black Sweater",
+    product : "Hawaii Shirt",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const Reviews = [
     date: "09/11/23",
     stars: 5,
     review: "Good Fabric.",
-    product : "Black Sweater",
+    product : "Black Jean",
   },
   {
     id: 10,
@@ -77,6 +77,6 @@ export const Reviews = [
     date: "09/12/23",
     stars: 5,
     review: "Perfect!! ",
-    product : "Black Sweater",
+    product : "Blue Jeans",
   },
 ];

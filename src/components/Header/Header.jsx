@@ -9,17 +9,17 @@ function Header() {
               <div className='feature grid-one '>
               <Link to="/product"><div className='overlay'></div>
                  <img className='' src="/src/img/home1.png" alt="" />
-                  <h1 className=' absolute  bottom-0 left-0 text-white text-3xl font-bold p-4 '>Hawaii shirt New Collection</h1></Link>
+                  <h1 className=' absolute  bottom-0 left-0 text-white text-3xl font-bold p-4 '>ALL COLLECTION</h1></Link>
               </div>
               <div className='feature grid-two'>
-              <Link to="/product"><div className='overlay'></div>
+              <Link to="/product/bottoms"><div className='overlay'></div>
                 <img src="/src/img/home2.jpg" alt="" />
-                <h1 className=' absolute  bottom-0 left-0 text-white text-3xl font-bold p-4 '>SHOP X POHS Collection</h1></Link>
+                <h1 className=' absolute  bottom-0 left-0 text-white text-3xl font-bold p-4 '> POHS. BOTTOMS  </h1></Link>
               </div>
               <div className='feature grid-three'>
-              <Link to="/product"><div className='overlay'></div>
+              <Link to="/product/tops"><div className='overlay'></div>
                  <img src="/src/img/home3.jpg" alt="" />
-                 <h1 className=' absolute  bottom-0 left-0 text-white text-3xl font-bold p-4 '>Up to 30% off</h1></Link>
+                 <h1 className=' absolute  bottom-0 left-0 text-white text-3xl font-bold p-4 '>EVERYDAY TOPS</h1></Link>
               </div>
           </div>
          

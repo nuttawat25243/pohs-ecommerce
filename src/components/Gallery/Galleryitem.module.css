@@ -30,11 +30,9 @@
     width: 500px;
     height: 300px;
     background-color: transparent;
-
     cursor: pointer;
 }
-
-  .overlay {
+  .overlayimg {
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -56,6 +54,44 @@
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 1;
     transition: all 0.3s;
+}
+.overlayInfo {
+background-color: black; 
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0%;
+left: 0%;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.8);
+cursor: default;
+   
+}
+.infocontain {
+     max-width:650px;
+     max-height:400px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     background-color: white;
+     z-index: 90;
+     padding: 36px;
+    
+}
+
+.shopInfo {
+  
+    display: flex;
+
+}
+.shopInfo img{
+    
+    max-width: 10rem;
+    display: flex;
+    margin-right: 24px;
+
+
 }
 
 
