@@ -50,7 +50,7 @@ function Navfunction({ handleNavShow,handleSearchShow, navShow,searchShow }) {
         </Link>
       </div>
     <div className='flex p-4 text-xl '>
-      <Account />
+      <Account  />
       <Cart />
       </div>
     </nav>

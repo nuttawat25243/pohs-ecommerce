@@ -3,9 +3,7 @@ import React,{useState,useRef, useEffect} from 'react'
  import Navfunction from './Navfunction';
  import Navhamburger from './Navhamburger';
  import NavSearchbutton from './NavSearchbutton';
-
  import "./Nav.css";
-
 
 function Nav( ) {
   const [navShow,setNavShow] = useState(false);

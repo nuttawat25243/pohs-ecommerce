@@ -8,11 +8,15 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from './pages/Home.jsx';
-import ProductFilter from './pages/ProductFilter.jsx'
+import ProductFilter from './pages/ProductAll.jsx'
 import Productdetail from './pages/Productdetail.jsx'
 import ProductTop from './pages/ProductTop.jsx'
 import ProductBottom from './pages/ProductBottom.jsx'
 import ProductAcc from './pages/ProductAcc.jsx'
+import CheckOut from './pages/CheckOut.jsx'
+
+import { Provider } from 'react-redux';
+import store from '../src/store/store.js';
 
 const router = createBrowserRouter([
   {
@@ -39,11 +43,15 @@ const router = createBrowserRouter([
     path: "/product/accessories",
    element: <ProductAcc/>,
   },
-
+  {
+    path: "/checkout",
+   element: <CheckOut/>,
+  },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Provider store={store}>
      <RouterProvider router={router} />
-
+     </Provider>
   </React.StrictMode>,
 )

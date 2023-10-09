@@ -6,11 +6,7 @@ function App() {
 
   return (
     <>
-      <Nav />
-      {/*
-          api 
-          cart
-          */}
+   
   </>
   );
 }

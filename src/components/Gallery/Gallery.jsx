@@ -3,7 +3,6 @@ import style from "./Gallery.module.css";
 import GalleryItem from "./GalleryItem";
 import { BsChevronLeft,BsChevronRight } from "react-icons/bs";
 
-
 function Gallery() {
   const slideLeft = () => {
     let slider = document.getElementById("gallery-slider");
@@ -20,7 +19,6 @@ function Gallery() {
      <div className={style.container}>
         <div className={style.titlebutton}>
           <h3  >SHOP THE LOOK.</h3>
-          <h2 ><a href="">View All</a></h2>  
         </div> 
         <div className={style.btns}>
             <button title="scroll left" onClick={slideLeft}>

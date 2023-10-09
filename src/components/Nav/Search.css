@@ -26,10 +26,7 @@
   color: #495057;
 
 }
-@media (max-width: 640px) {  
-.search-box {
-}
-}
+
 .search-box input{
   width: 100%;
   padding: 6px 5px;

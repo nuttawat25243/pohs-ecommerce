@@ -17,9 +17,9 @@ import Img14 from "../../img/navacc2.png";
 import Img15 from "../../img/navacc3.png";
 import { Link } from 'react-router-dom';
 
-
+// import buttonName from '../Data/ButtonData';
 function Menu() {
-  const numButtons = 6; // Number of buttons
+  // const numButtons = 6; // Number of buttons
 
   // Define a constant with the button names
   const buttonName = [
@@ -177,7 +177,6 @@ function Menu() {
           }
         });
       }
-
       setButtonStates(newButtonStates); // Update the state
     }
   };
@@ -205,10 +204,10 @@ function Menu() {
                                 <ul>
                                   <li className='border-b-2 pb-2 mt-2 font-bold'>CATAGORIES</li>
                                   <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/product">{button.catagories1}</Link></li>
-                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/tops">{button.catagories2}</Link></li>
-                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/bottoms">{button.catagories3}</Link></li>
-                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/accessories">{button.catagories4}</Link></li>
-                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/product">{button.catagories5}</Link></li>
+                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/product/tops">{button.catagories2}</Link></li>
+                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/product/bottoms">{button.catagories3}</Link></li>
+                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/product/accessories">{button.catagories4}</Link></li>
+                                  <li className='mt-2'><Link  onClick={() => window.top(0, 0)} to="/product/">{button.catagories5}</Link></li>
                                   
                                 </ul>
                               </div>
