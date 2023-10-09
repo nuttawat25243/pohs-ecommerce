@@ -80,30 +80,30 @@ const router = createHashRouter ([
     path: "/",
     element: <Home/>,
   },
-  {
-    path: "/product",
-    element: <ProductFilter/>,
-  },
-   {
-     path: "/product/:id",
-    element: <Productdetail/>,
-   },
-   {
-    path: "/product/tops",
-   element: <ProductTop/>,
-  },
-  {
-    path: "/product/bottoms",
-   element: <ProductBottom/>,
-  },
-  {
-    path: "/product/accessories",
-   element: <ProductAcc/>,
-  },
-  {
-    path: "/checkout",
-   element: <CheckOut/>,
-  },
+  // {
+  //   path: "/product",
+  //   element: <ProductFilter/>,
+  // },
+  //  {
+  //    path: "/product/:id",
+  //   element: <Productdetail/>,
+  //  },
+  //  {
+  //   path: "/product/tops",
+  //  element: <ProductTop/>,
+  // },
+  // {
+  //   path: "/product/bottoms",
+  //  element: <ProductBottom/>,
+  // },
+  // {
+  //   path: "/product/accessories",
+  //  element: <ProductAcc/>,
+  // },
+  // {
+  //   path: "/checkout",
+  //  element: <CheckOut/>,
+  // },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
