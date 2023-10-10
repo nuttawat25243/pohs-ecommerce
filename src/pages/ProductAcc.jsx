@@ -7,13 +7,11 @@ import { Link } from "react-router-dom";
 
 function ProductAccessories() {
   const [selectedCategory, setSelectedCategory] = useState("accessories");
-  // ----------- Radio Filtering -----------
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
   function filteredData(selected) {
     let filteredProducts = items;
-    // Filtering Input Items
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, rangeprice }) =>

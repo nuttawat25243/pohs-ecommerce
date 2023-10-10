@@ -3,20 +3,20 @@ import { FiChevronDown } from "react-icons/fi";;
 import {useState}from 'react'
 
 function Color  ({ handleChange }) {
-  const [isOpen1, setIsOpen1] = useState(false);
-  const toggleDropdown1 = () => {
-     setIsOpen1(!isOpen1);
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDropdown = () => {
+     setIsOpen(!isOpen);
   };
   return (
     <>
 
           <div className='font-blink text-sm   flex lg:border-b-2'>
             <div className='w-full lg:w-48  py-4 truncate lg:p-0 pl-8  '>
-              <button className={`flex justify-between w-full lg:py-4  ${isOpen1 ? ' underline ' : ''}`} 
-                 onClick={toggleDropdown1} >COLOR  
-                <FiChevronDown  className={` pt-1 text-lg ${isOpen1 ? 'transform rotate-180 mt-1' : ''}`}/>
+              <button className={`flex justify-between w-full lg:py-4  ${isOpen ? ' underline ' : ''}`} 
+                 onClick={toggleDropdown} >COLOR  
+                <FiChevronDown  className={` pt-1 text-lg ${isOpen ? 'transform rotate-180 mt-1' : ''}`}/>
               </button>
-              {isOpen1 && (
+              {isOpen && (
         <ul className=' p-4 text-sm '>
         <li>
             <label className="flex">

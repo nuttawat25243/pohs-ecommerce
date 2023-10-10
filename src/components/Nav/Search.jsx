@@ -28,8 +28,8 @@ function Search() {
     };
   }, [showResults]);
 
-  return ( <div className='p-4 text-base   justify-center  hidden w-2/5 sm:block justify-center' ref={searchRef}>
-                  <form  action='search'>
+  return ( <div className='p-4 text-base   justify-center  hidden w-2/5 sm:block  justify-center' ref={searchRef}>
+                  <form  action='search '>
                   <div className='search-box block'>
 
                     <input
@@ -45,7 +45,7 @@ function Search() {
                       onFocus={() => setShowResults(true)}
                     />
                       {showResults && searchName && (
-                      <ul className='  search-item block font-blink bg-white '>
+                      <ul className='  search-item  block font-blink bg-white '>
                         {filteredProducts.map((value) => (
                           <Link
                             onClick={() => setShowResults(false)}

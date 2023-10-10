@@ -3,10 +3,10 @@ import "./ProductInfo.css";
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../store/features/CartSlice';
-import {items} from '../Data/ProductData'
+
 function ProductInfo() {
      const { id } = useParams();
-     const productData = items.find((item) => item.id === parseInt(id));
+     const [productData, setProductData] = useState(null);
      const [size, setSize] = useState("");
      const [quantity,setQuantity] = useState(1);
      const [pickSizeAlert, setPickSizeAlert] = useState();
@@ -22,7 +22,7 @@ function ProductInfo() {
          price: productData.price,
          quantity : quantity,
          size: size, 
-         img: productData.img,
+         img: `http://localhost:1337${productData.img.data.attributes.url}`,
         };
  
  
@@ -36,6 +36,30 @@ function ProductInfo() {
        setPickSizeAlert(true);
      }
     };
+ 
+  
+    useEffect(() => {
+      const apiUrl = `http://localhost:1337/api/products/${id}?populate=img`;
+  
+       fetch(apiUrl)
+         .then((response) => {
+           if (!response.ok) {
+             throw new Error('Network response was not ok');
+           }
+           return response.json();
+         })
+         .then((data) => {
+          const product = data.data.attributes;
+          setProductData(product);
+          setImage(`http://localhost:1337${product.img.data.attributes.url}`);
+        })
+        .catch((error) => {
+          console.error('Error fetching product:', error);
+        });
+    }, [id]);
+      if (productData === null) {
+        return <div className='text-center p-12 text-2xl font-bold'>Loading...</div>;
+      }
       
   return (
     <>
@@ -45,7 +69,7 @@ function ProductInfo() {
               <div className="sm:flex sm:flex-row-reverse mx-4 w-3/5   ">
                 
                 <div className=" mx-auto lg:max-h-[36rem]  lg:max-w-[36rem]    	 ">
-                      <img className=' max-h-[36rem] w-auto ' src={productData.img} alt="product" />
+                      <img className=' max-h-[36rem] w-auto ' src={`http://localhost:1337${productData.img.data.attributes.url}`} alt="product" />
                   </div>  
                   
               </div> 

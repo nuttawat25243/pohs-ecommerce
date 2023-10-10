@@ -6,17 +6,12 @@ import ProductList from "../components/ProductList/ProductList";
 import { Link } from "react-router-dom";
 
 function ProductAll() {
-   // ----------- State Category,Name Filtering -----------
    const [selectedCategory, setSelectedCategory] = useState(null);
-   // ----------- Radio Filtering -----------
    const handleChange = (event) => {
      setSelectedCategory(event.target.value);
    };
-  // ----------- From Search Bar -----------
   function filteredData(category) {
    let filteredProducts = items;
- 
-   // Filtering by category
    if (category) {
      filteredProducts = filteredProducts.filter(
        ({ category: productCategory }) => productCategory === category

@@ -14,7 +14,6 @@ function TotalCart() {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
   const savedCartItems = JSON.parse(localStorage.getItem('cartItems'));
-  const totalCartQuantity = useSelector(totalCartItem);
   const Price = useSelector(totalPrice);
   const handleRemoveFromCart = (item) => {
     dispatch(removeFromCart(item));
